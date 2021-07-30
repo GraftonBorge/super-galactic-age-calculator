@@ -20,6 +20,9 @@ describe('ageCalculator', () => {
     expect(myGalacticAges.marsYearAge).toEqual(12)
   })
 
+  test('should return age on Mercury', () => {
+    expect(myGalacticAges.mercuryYearAge).toEqual(95)
+  })
 
 
 })
