@@ -28,5 +28,9 @@ describe('ageCalculator', () => {
     expect(myGalacticAges.venusYearAge).toEqual(37)
   })
 
+  test('should return age on Jupiter', () => {
+    expect(myGalacticAges.jupiterYearAge).toEqual(1)
+  })
+
 
 })
