@@ -9,11 +9,11 @@ describe('ageCalculator', () => {
   })
 
   test('Should return my age on Earth', () => {
-    expect(myGalacticAges.earthAge).toEqual(23);
+    expect(myGalacticAges.earthYearAge).toEqual(23);
   })
 
-  test('Should return my age on Mars', () => {
-    expect(myGalacticAges.marsAge).toEqual(12)
+  test('Should return my age in earth days', () => {
+    expect(myGalacticAges.earthDayAge).toEqual(8395)
   })
 
 
