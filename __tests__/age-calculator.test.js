@@ -16,7 +16,9 @@ describe('ageCalculator', () => {
     expect(myGalacticAges.earthDayAge).toEqual(8395)
   })
 
-
+  test('should return age on mars', () => {
+    expect(myGalacticAges.marsYearAge).toEqual(12)
+  })
 
 
 
