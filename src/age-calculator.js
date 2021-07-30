@@ -6,6 +6,7 @@ export default class ageCalculator {
     this.marsYearAge = Math.trunc(this.earthDayAge / 687)
     this.mercuryYearAge = Math.trunc(this.earthDayAge / 88)
     this.venusYearAge = Math.trunc(this.earthDayAge / 225)
+    this.jupiterYearAge = Math.trunc(this.earthDayAge / 4333)
   }
 
 
