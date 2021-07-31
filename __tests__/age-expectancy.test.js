@@ -71,5 +71,15 @@ describe('demographic', () => {
     expect(femaleDemographic.venusLifeExpectancy).toEqual(131)
   })
 
+  test('should return age expectancy on jupiter for male', () => {
+    maleDemographic.maleAgeExpectancy("USA")
+    expect(maleDemographic.jupiterLifeExpectancy).toEqual(6)
+  })
+
+  test('should return age expectancy on jupiter for female', () => {
+    femaleDemographic.femaleAgeExpectancy("USA")
+    expect(femaleDemographic.jupiterLifeExpectancy).toEqual(6)
+  })
+
 
 })
