@@ -9,6 +9,8 @@ export default class demographic {
     this.lifeDayExpectancy;
     this.marsLifeExpectancy;
     this.mercuryLifeExpectancy;
+    this.venusLifeExpectancy;
+    this.jupiterLifeExpectancy;
   }
 
 maleAgeExpectancy(countrieChosen) {
@@ -30,6 +32,7 @@ maleAgeExpectancy(countrieChosen) {
       this.marsLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 687)
       this.mercuryLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 88)
       this.venusLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 225)
+      this.jupiterLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 4333)
     }
   }
 }
@@ -53,6 +56,7 @@ femaleAgeExpectancy(countrieChosen) {
       this.marsLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 687)
       this.mercuryLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 88)
       this.venusLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 225)
+      this.jupiterLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 4333)
     }
   }
 }
