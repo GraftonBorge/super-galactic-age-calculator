@@ -13,21 +13,26 @@ describe('demographic', () => {
 
   test('should return life expectancy for my US male demographic', () => {
     maleDemographic.maleAgeExpectancy("USA");
-    expect(maleDemographic.lifeExpectancy).toEqual(75)
+    expect(maleDemographic.lifeYearExpectancy).toEqual(75)
   })
 
   test('should return life expectancy for my UK male demographic', () => {
     maleDemographic.maleAgeExpectancy("UK");
-    expect(maleDemographic.lifeExpectancy).toEqual(79)
+    expect(maleDemographic.lifeYearExpectancy).toEqual(79)
   })
 
   test('should return life expectancy for my US female demographic', () => {
     femaleDemographic.femaleAgeExpectancy("USA");
-    expect(femaleDemographic.lifeExpectancy).toEqual(81)
+    expect(femaleDemographic.lifeYearExpectancy).toEqual(81)
   })
 
   test('should return life expectancy for my UK female demographic', () => {
     femaleDemographic.femaleAgeExpectancy("UK");
-    expect(femaleDemographic.lifeExpectancy).toEqual(83)
+    expect(femaleDemographic.lifeYearExpectancy).toEqual(83)
+  })
+  
+  test('should return age expectancy in days', () => {
+    maleDemographic.maleAgeExpectancy("USA")
+    expect(maleDemographic.lifeDayExpectancy).toEqual(27375)
   })
 })
