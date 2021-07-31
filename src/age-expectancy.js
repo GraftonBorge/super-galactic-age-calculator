@@ -5,8 +5,8 @@ export default class demographic {
   constructor(gender, countrie, lifeYearExpectancy) {
     this.gender = gender
     this.countrie = countrie
-    this.lifeYearExpectancy;
-
+    this.lifeYearExpectancy = lifeYearExpectancy
+    this.lifeDayExpectancy;
   }
 
 maleAgeExpectancy(countrieChosen) {
@@ -24,6 +24,7 @@ maleAgeExpectancy(countrieChosen) {
     if (currentCountrie.countrie === countrieChosen) {
       this.countrie = countrieChosen;
       this.lifeYearExpectancy = currentCountrie.lifeYearExpectancy;
+      this.lifeDayExpectancy = this.lifeYearExpectancy * 365;
     }
   }
 }
@@ -43,6 +44,7 @@ femaleAgeExpectancy(countrieChosen) {
     if (currentCountrie.countrie === countrieChosen) {
       this.countrie = countrieChosen;
       this.lifeYearExpectancy = currentCountrie.lifeYearExpectancy;
+      this.lifeDayExpectancy = this.lifeYearExpectancy * 365;
     }
   }
 }
