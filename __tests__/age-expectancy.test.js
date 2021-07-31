@@ -3,10 +3,16 @@ import demographic from "../src/age-expectancy";
 
 
 describe('demographic', () => {
-  let myDemographic;
+  let maleDemographic;
+  let femaleDemographic;
 
   beforeEach(() => {
-    myDemographic = new demographic();
+    maleDemographic = new demographic("male");
+    femaleDemographic = new demographic("female")
   })
 
+  test('should return life expectancy for my male demographic', () => {
+    maleDemographic.maleAgeExpectancy("USA");
+    expect(maleDemographic.lifeExpectancy).toEqual(75)
+  })
 })
