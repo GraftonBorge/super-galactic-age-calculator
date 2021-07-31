@@ -29,6 +29,7 @@ maleAgeExpectancy(countrieChosen) {
       this.lifeDayExpectancy = this.lifeYearExpectancy * 365;
       this.marsLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 687)
       this.mercuryLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 88)
+      this.venusLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 225)
     }
   }
 }
@@ -51,6 +52,7 @@ femaleAgeExpectancy(countrieChosen) {
       this.lifeDayExpectancy = this.lifeYearExpectancy * 365;
       this.marsLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 687)
       this.mercuryLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 88)
+      this.venusLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 225)
     }
   }
 }
