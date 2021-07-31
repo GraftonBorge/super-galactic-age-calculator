@@ -7,6 +7,7 @@ export default class demographic {
     this.countrie = countrie
     this.lifeYearExpectancy = lifeYearExpectancy
     this.lifeDayExpectancy;
+    this.marsLifeExpectancy;
   }
 
 maleAgeExpectancy(countrieChosen) {
@@ -25,6 +26,7 @@ maleAgeExpectancy(countrieChosen) {
       this.countrie = countrieChosen;
       this.lifeYearExpectancy = currentCountrie.lifeYearExpectancy;
       this.lifeDayExpectancy = this.lifeYearExpectancy * 365;
+      this.marsLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 687)
     }
   }
 }
