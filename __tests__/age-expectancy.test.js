@@ -36,18 +36,30 @@ describe('demographic', () => {
     expect(maleDemographic.lifeDayExpectancy).toEqual(27375)
   })
 
-  test('should return age expectancy on mars for male', () => {
-    maleDemographic.maleAgeExpectancy("USA")
-    expect(maleDemographic.marsLifeExpectancy).toEqual(39)
-  })
-
   test('should return age expectancy in days for female', () => {
     femaleDemographic.femaleAgeExpectancy("USA")
     expect(femaleDemographic.lifeDayExpectancy).toEqual(29565)
+  })
+
+  test('should return age expectancy on mars for male', () => {
+    maleDemographic.maleAgeExpectancy("USA")
+    expect(maleDemographic.marsLifeExpectancy).toEqual(39)
   })
 
   test('should return age expectancy on mars for female', () => {
     femaleDemographic.femaleAgeExpectancy("USA")
     expect(femaleDemographic.marsLifeExpectancy).toEqual(43)
   })
+
+  test('should return age expectancy on mercury for male', () => {
+    maleDemographic.maleAgeExpectancy("USA")
+    expect(maleDemographic.mercuryLifeExpectancy).toEqual(311)
+  })
+
+  test('should return age expectancy on mercury for female', () => {
+    femaleDemographic.femaleAgeExpectancy("USA")
+    expect(femaleDemographic.mercuryLifeExpectancy).toEqual(335)
+  })
+
+
 })
