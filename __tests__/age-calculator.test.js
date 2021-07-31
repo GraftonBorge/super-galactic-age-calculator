@@ -31,6 +31,4 @@ describe('ageCalculator', () => {
   test('should return age on Jupiter', () => {
     expect(myGalacticAges.jupiterYearAge).toEqual(1)
   })
-
-
 })
