@@ -25,5 +25,24 @@ maleAgeExpectancy(countrieChosen) {
     }
   }
 }
+
+femaleAgeExpectancy(countrieChosen) {
+  const db_female = [
+  {
+    countrie: "USA",
+    lifeExpectancy: 81
+  },
+  {
+    countrie: "UK",
+    lifeExpectancy: 83
+  }]
+  for (let i = 0; i < db_female.length; i++) {
+    let currentCountrie = db_female[i];
+    if (currentCountrie.countrie === countrieChosen) {
+      this.countrie = countrieChosen;
+      this.lifeExpectancy = currentCountrie.lifeExpectancy;
+    }
+  }
+}
 };
 
