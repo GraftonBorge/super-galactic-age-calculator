@@ -35,4 +35,9 @@ describe('demographic', () => {
     maleDemographic.maleAgeExpectancy("USA")
     expect(maleDemographic.lifeDayExpectancy).toEqual(27375)
   })
+
+  test('should return age expectancy left on for mars', () => {
+    maleDemographic.maleAgeExpectancy("USA")
+    expect(maleDemographic.marsLifeExpectancy).toEqual(39)
+  })
 })
