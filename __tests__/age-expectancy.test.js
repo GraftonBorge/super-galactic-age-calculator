@@ -25,4 +25,9 @@ describe('demographic', () => {
     femaleDemographic.femaleAgeExpectancy("USA");
     expect(femaleDemographic.lifeExpectancy).toEqual(81)
   })
+
+  test('should return life expectancy for my UK female demographic', () => {
+    femaleDemographic.femaleAgeExpectancy("UK");
+    expect(femaleDemographic.lifeExpectancy).toEqual(83)
+  })
 })
