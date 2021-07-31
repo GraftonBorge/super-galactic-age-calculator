@@ -47,6 +47,7 @@ femaleAgeExpectancy(countrieChosen) {
       this.countrie = countrieChosen;
       this.lifeYearExpectancy = currentCountrie.lifeYearExpectancy;
       this.lifeDayExpectancy = this.lifeYearExpectancy * 365;
+      this.marsLifeExpectancy = Math.trunc(this.lifeDayExpectancy / 687)
     }
   }
 }
