@@ -1,31 +1,36 @@
-# (Application Name)
+# super-galactic-age-calculator
 
-#### (Brief Description of Application)
+#### Code-along project to learn how to implement webpack. May be useful as a template. Also allows user to input dimensions of a triangle and receive the message "I can't do that yet."
 
-#### By (Your Name Here)
+#### By _**Grafton Borge**_
 
 ## Technologies Used
-
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* Bootstrap
+* JQuery
+* JavaScript
+* webpack
+* npm
 
 ## Description
+_Set up webpack to allow creating a live development server. Eslint, HTMLWebpackPlugin. Project is set up for JQuery and Bootstrap._
 
 ## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+### Run locally
+_You'll need Git and Node.js_
+* Clone from GitHub
+* From project's root directory in the command line: `npm install`
+* `npm run start` to build and run project on live development server
+### If using as a template
+* Specify project name and author in package.json
+* Delete src/triangle.js
+* In src/main.js, delete import from triangle.js
 
 ## Known Bugs
-
-* _Any known issues_
-* _should go here_
-
+* 
 ## License
-
+MIT
+Copyright (c) 2021 Grafton Borge
 ## Contact Information
+Grafton Borge email@email.com

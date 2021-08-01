@@ -1,3 +1,4 @@
+import demographic from "./age-expectancy"
 export default class ageCalculator {
 
   constructor(earthYearAge) {

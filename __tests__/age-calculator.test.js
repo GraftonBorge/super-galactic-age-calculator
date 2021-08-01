@@ -1,5 +1,6 @@
 
 import ageCalculator from "../src/age-calculator";
+import demographic from "../src/age-expectancy";
 
 describe('ageCalculator', () => {
   let myGalacticAges;
@@ -31,4 +32,5 @@ describe('ageCalculator', () => {
   test('should return age on Jupiter', () => {
     expect(myGalacticAges.jupiterYearAge).toEqual(1)
   })
+
 })
